@@ -1,0 +1,109 @@
+:root {
+  --color1: #ffeead;
+  --color2: #d9534f;
+  --color3: #ffcd27;
+  --color4: #1a171d;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* font */
+/* @font-face {
+  font-family: "roboto";
+  src: url("../assets/font/");
+}
+@font-face {
+  font-family: "";
+  src: url("../assets/font/");
+} */
+/* ----- NAVBAR ----- */
+nav {
+  position: relative;
+  background: var(--color2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 100;
+  width: 100vw;
+  height: 60px;
+}
+
+#navBtnCon {
+  width: fit-content;
+  display: flex;
+  margin-right: 4%;
+}
+
+#navBtnCon a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navBtn {
+  background-color: var(--color3);
+  width: 200px;
+  height: 40px;
+  border: 2px solid var(--color4);
+  margin: 0 12px;
+  cursor: pointer;
+}
+
+.navBtn:nth-child(1),
+.navBtnShadow:nth-child(1) {
+  border-radius: 15px 0 0 15px;
+}
+
+.navBtn:nth-child(5) {
+  border-radius: 0 15px 15px 0;
+}
+
+.navBtn i {
+  color: #1a171d;
+  font-size: 1.8em;
+}
+
+#navbtnShadowCont {
+  width: fit-content;
+  display: flex;
+  margin-right: 4%;
+  position: absolute;
+  right: 20px;
+  z-index: -1;
+}
+
+.navBtnShadow {
+  background-color: var(--color4);
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 12px;
+}
+
+.active {
+  transform: translateX(-16px);
+}
+
+.navPopup {
+  display: none;
+}
+
+/* ----- HEADER ----- */
+header {
+  height: 100vh;
+  background: var(--color1);
+}
+section {
+  height: 100vh;
+}
