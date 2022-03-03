@@ -11,14 +11,15 @@
   scroll-behavior: smooth;
 }
 /* font */
-/* @font-face {
+/* /* @font-face {
   font-family: "roboto";
   src: url("../assets/font/");
-}
-@font-face {
-  font-family: "";
-  src: url("../assets/font/");
 } */
+@font-face {
+  font-family: "Permanent Marker";
+  src: url("../asset/font/PermanentMarker-Regular.ttf") format("truetype");
+}
+
 /* ----- NAVBAR ----- */
 nav {
   position: relative;
@@ -35,7 +36,8 @@ nav {
 }
 
 #navBtnCon {
-  width: fit-content;
+  width: 60%;
+  min-width: 500px;
   display: flex;
   margin-right: 4%;
 }
@@ -63,7 +65,8 @@ nav {
   border-radius: 15px 0 0 15px;
 }
 
-.navBtn:nth-child(5) {
+.navBtn:nth-child(5),
+.navBtnShadow:nth-child(5) {
   border-radius: 0 15px 15px 0;
 }
 
@@ -73,7 +76,8 @@ nav {
 }
 
 #navbtnShadowCont {
-  width: fit-content;
+  width: 60%;
+  min-width: 500px;
   display: flex;
   margin-right: 4%;
   position: absolute;

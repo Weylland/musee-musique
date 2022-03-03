@@ -1,6 +1,19 @@
-#container {
+#cassetteContainer {
   width: 250px;
-  position: relative;
+  position: absolute;
+  top: -250px;
+  left: 50%;
+}
+
+#cassetteContainer p {
+  position: absolute;
+  z-index: 5;
+  bottom: 26%;
+  left: 32%;
+  transform: rotate(-3deg);
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.5em;
+  font-weight: 900;
 }
 
 #cassette {
